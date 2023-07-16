@@ -1,0 +1,39 @@
+
+.outerCategoryContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.categoryContainer{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    background-color: aliceblue;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category img{
+    object-fit: contain;
+    mix-blend-mode:multiply;
+    width: 160px;
+    height: 150px;
+}
+
+@media (max-width : 768px) {
+
+    .categoryContainer{
+        display: flex;
+        flex-direction: column;
+     
+        width: 80%;
+    }
+}

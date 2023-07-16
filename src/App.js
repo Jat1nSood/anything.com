@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "../src/CSS/app.css";
+import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Registration from "./components/Registration";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Main Div */}
+
+      <div className="main">
+        <Router>
+        <div className="centerContainer">
+              <div className="boxWidth">
+                <Navbar />
+              </div>
+            </div>
+          <Routes>
+           
+            <Route
+              path="/"
+              element={
+                <div className="landingcenterContainer">
+                  <div className="boxWidth">
+                    <Landing />
+                  </div>
+                </div>
+              }
+            />
+
+             
+<Route
+              path="/login"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <Login />
+                  </div>
+                </div>
+              }
+            />
+
+<Route
+              path="/register"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <Registration />
+                  </div>
+                </div>
+              }
+            />
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 

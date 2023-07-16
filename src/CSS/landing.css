@@ -1,0 +1,92 @@
+.landing{
+
+    display: flex;
+    flex-direction: column;
+
+}
+.Hero{
+
+    background-color: black;
+}
+
+.landingSearch{
+
+    display: flex;
+    justify-content: space-between;
+    align-items : start;
+    padding: 40px;
+
+}
+
+.filter{
+    display: flex;
+    
+}
+
+.filter p{
+    margin: 0 1rem 0 0 ;
+}
+
+.landingCardContainer{
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+.landingCard{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.landingCard img{
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCart{
+    cursor: pointer;
+    font-size: 14px;
+
+    width: 90%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.quantity{
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.quantityChange{
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color:rgb(226, 226, 226) ;
+    color: black;
+    font-weight : 900;
+    border-radius: 200px;
+    width: 18px;
+
+}
+.quantityChangeNumber{
+    padding: 5px;
+}

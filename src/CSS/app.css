@@ -1,0 +1,37 @@
+.main{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.centerContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.landingcenterContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: rgb(232, 230, 225); */
+    
+
+}
+
+.boxWidth{
+
+    width: 1280px;
+
+}
+@media (min-width : 1700px) {
+
+    .boxWidth{
+
+        width: 1280px;
+
+    }
+    
+}
