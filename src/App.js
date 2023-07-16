@@ -10,17 +10,15 @@ import Registration from "./components/Registration";
 function App() {
   return (
     <>
-      {/* Main Div */}
-
       <div className="main">
         <Router>
-        <div className="centerContainer">
-              <div className="boxWidth">
-                <Navbar />
-              </div>
+          <div className="centerContainer">
+            <div className="boxWidth">
+              <Navbar />
             </div>
+          </div>
           <Routes>
-           
+
             <Route
               path="/"
               element={
@@ -32,8 +30,7 @@ function App() {
               }
             />
 
-             
-<Route
+            <Route
               path="/login"
               element={
                 <div className="centerContainer">
@@ -44,7 +41,7 @@ function App() {
               }
             />
 
-<Route
+            <Route
               path="/register"
               element={
                 <div className="centerContainer">

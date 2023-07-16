@@ -5,7 +5,7 @@ import banner from '../assets/banner.jpg'
 export default function Hero() {
   return (
     <div>
-        <img src={banner}/>
+        <img src={banner} alt=""/>
     </div>
   )
 }
