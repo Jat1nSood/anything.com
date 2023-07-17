@@ -2,15 +2,20 @@ import "./App.css";
 import "../src/CSS/app.css";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
+import CategoryPage from "./components/CategoryPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
 
+import { CartProvider } from "./context/context";
+import MyCart from "./components/MyCart";
+
 function App() {
   return (
     <>
       <div className="main">
+        <CartProvider>
         <Router>
           <div className="centerContainer">
             <div className="boxWidth">
@@ -51,8 +56,31 @@ function App() {
                 </div>
               }
             />
+
+<Route
+              path="/mycart"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <MyCart />
+                  </div>
+                </div>
+              }
+            />
+
+                <Route
+              path="/category/:categoryname"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <CategoryPage />
+                  </div>
+                </div>
+              }
+            />
           </Routes>
         </Router>
+        </CartProvider>
       </div>
     </>
   );

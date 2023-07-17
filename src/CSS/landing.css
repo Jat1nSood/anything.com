@@ -4,6 +4,7 @@
     flex-direction: column;
 
 }
+
 .Hero{
 
     background-color: black;
@@ -37,6 +38,7 @@
 }
 
 .landingCard{
+    position: relative;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -46,6 +48,11 @@ align-items: center;
     background-color: white;
 }
 
+.productRating{
+    position: absolute;
+    top : 4%;
+    right: 0;
+}
 .landingCard img{
     width: 180px;
     height: 150px;
@@ -68,6 +75,8 @@ align-items: center;
     color: white;
     border-radius: 10px;
 }
+
+
 
 .quantity{
     display: flex;

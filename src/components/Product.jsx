@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import banner from "../assets/banner.jpg";
+import CartContext from "../context/context";
 
+export default function Product({id, url, title, price, rating, category}){
 
-export default function Product({id, url, title, price}){
+  const {addToCart} = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
+    const[basketCliked, setbasketClicked] = useState(false)
     const handleQuantityAdd = () => {
         if (quantity < 3) {
           setQuantity(quantity + 1);
@@ -19,8 +22,18 @@ export default function Product({id, url, title, price}){
           setQuantity(quantity - 1);
         }
       };
+
+
+      const handleAddToCart = () =>{
+
+        setbasketClicked(true)
+
+      }
     return (
         <div className="landingCard" key={id}>
+          <div className="productRating">
+            {rating}
+          </div>
             <img src={url} alt="cardImage" />
             <h2>{title}</h2>
 
@@ -37,7 +50,7 @@ export default function Product({id, url, title, price}){
               <p>Rs.{price}</p>
             </div>
 
-            <button className="addToCart">Add To Basket</button>
+            <button onClick = {() => addToCart(title)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
           </div>
     )
 }
