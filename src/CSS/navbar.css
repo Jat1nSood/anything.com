@@ -58,6 +58,16 @@
 
 }
 
+.navCart{
+    position: relative;
+}
+
+.navCart span{
+    position: absolute;
+    top:  -40%;
+    right: 20%;
+}
+
 @media (max-width : 768px) {
     .navItems{
         display: none;

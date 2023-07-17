@@ -13,9 +13,23 @@ export default function MyCart() {
     useEffect(() => {
       setProducts(addedProduct);
     }, []);
-  return (
-    <div className="landingCardContainer">
-    {products.map((product, index) => <Product key={product.id} id = {product.id} title={product.title} price={product.price} url={product.url} rating={product.rating} category = {product.category}/>)}
-  </div>
-  )
+    return (
+        <div className="landingCardContainer">
+          {products.length > 0 ? (
+            products.map((product, index) => (
+              <Product
+                key={product.id}
+                id={product.id}
+                title={product.title}
+                price={product.price}
+                url={product.url}
+                rating={product.rating}
+                category={product.category}
+              />
+            ))
+          ) : (
+            <div>No products in the cart</div>
+          )}
+        </div>
+      );
 }

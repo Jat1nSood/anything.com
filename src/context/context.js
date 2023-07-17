@@ -9,7 +9,7 @@ export function CartProvider({children}){
     const [cartQuant, setCartQuant] = useState('');
 
     const addToCart = (title) =>{
-        setAddedProduct((prevState) => [...prevState, title]);
+        setAddedProduct((prevState) => [...prevState, {title : title}]);
     }
 
 

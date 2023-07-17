@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navLogo">
+      <Link to="/" className="navLogo">
         <Link to="/">
           <h1>Anything.com</h1>
         </Link>
-      </div>
+      </Link>
 
       <ul className="navItems">
         <li className="navItem">
