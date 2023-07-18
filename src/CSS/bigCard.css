@@ -1,0 +1,48 @@
+.bigCardOuter{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0 ;
+
+}
+
+.bigCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.bigCard{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+.bigCardLink {
+    text-decoration: none;
+    color: rgb(3, 140, 140);
+}
+
+.bigCardLink:hover {
+    text-decoration: underline;
+    color: rgb(255, 181, 45);
+}
+.bigCardContainer img{
+    width: 320px;
+    height: 300px;
+}
+
+
+@media (max-width : 768px) {
+
+    .bigCardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    
+    }
+    
+}

@@ -1,0 +1,117 @@
+.myCartContainer{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    padding: 40px;
+
+}
+.myCartContainer1{
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 40px;
+
+}
+
+.myCartMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myCartEmpty{
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.myCartEmpty img {
+
+    width: 150px;
+    height: 150px;
+
+}
+.addedProductOuter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+background-color: white;
+}
+
+.addedProductHeading{
+    padding: 0 0 10px 0;
+}
+
+.myCartHeading{
+    font-size: 32px;
+    padding: 0px;
+}
+.myCartCard{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.myCartImage{
+    mix-blend-mode: multiply;
+    padding: 20px;
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+}
+
+.myCartTitle{
+    padding: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myCartPrice{
+
+    display: flex;
+}
+
+.myCartQuantity{
+    padding-top: 20px;
+    display: flex;
+    gap : 10px;
+}
+.myCartQuantity select{
+    cursor: pointer;
+
+}
+.remove{
+
+    /* background-color: #DC3545; */
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid;
+
+}
+
+.subTotal{
+    font-size: 20px;
+    margin-left: auto;
+
+    padding: 20px;
+}
+
+.subTotal span{
+    font-weight: 900;
+}
+
+
+.subTotalCard{
+    width: 30%;
+    padding: 40px;
+}

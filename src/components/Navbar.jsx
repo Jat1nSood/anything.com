@@ -28,8 +28,8 @@ export default function Navbar() {
         <li className="navItem">
           <Link to="/register">Register</Link>
         </li>
-        <li className="navItem">
-          <img src={search} />
+        <li className="navItem navSearch">
+          <img  src={search} />
         </li>
 
         <li className="navItem">

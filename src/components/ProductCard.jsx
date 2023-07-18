@@ -12,7 +12,7 @@ export default function ProductCard() {
 
   return (
     <div className="landingCardContainer">
-      {products.map((product, index) => <Product key={product.id} id = {product.id} title={product.title} price={product.price} url={product.url} rating={product.rating} category = {product.category}/>)}
+      {products.map((product, index) => <Product key={product.id} id = {product.id} title={product.title} price={product.price} url={product.url} rating={product.rating} description={product.description} category = {product.category}/>)}
     </div>
   );
 }

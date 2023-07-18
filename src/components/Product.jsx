@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import banner from "../assets/banner.jpg";
 import CartContext from "../context/context";
 
-export default function Product({id, url, title, price, rating, category}){
+export default function Product({id, url, title, price, rating, category, description}){
 
   const {addToCart} = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
@@ -50,7 +50,7 @@ export default function Product({id, url, title, price, rating, category}){
               <p>Rs.{price}</p>
             </div>
 
-            <button onClick = {() => addToCart(title)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
+            <button onClick = {() => addToCart(title, price, url, quantity, description)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
           </div>
     )
 }

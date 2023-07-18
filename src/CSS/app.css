@@ -1,7 +1,13 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&display=swap');
+
+  *{
+font-family: 'Poppins', sans-serif;
+  }
 .main{
     width: 100%;
     overflow: hidden;
-    background-color: white;
+    background-color: #e3e6e6;
 }
 
 .centerContainer{
@@ -17,16 +23,18 @@
     justify-content: center;
     align-items: start;
     /* background-color: rgb(232, 230, 225); */
+    width: 100%;
     
 
 }
 
 .boxWidth{
+    width: 1580px;
 
-    width: 1280px;
+    
 
 }
-@media (min-width : 1700px) {
+@media (max-width : 1700px) {
 
     .boxWidth{
 

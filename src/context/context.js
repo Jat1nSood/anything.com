@@ -8,10 +8,11 @@ export function CartProvider({children}){
 
     const [cartQuant, setCartQuant] = useState('');
 
-    const addToCart = (title) =>{
-        setAddedProduct((prevState) => [...prevState, {title : title}]);
+    const addToCart = (title, price, url,  quantity, description) =>{
+        setAddedProduct((prevState) => [...prevState, {title : title, url : url, price : price, quantity : quantity, description : description}]);
     }
 
+ 
 
     return(
         <CartContext.Provider value = {{addToCart, addedProduct}}>{children}</CartContext.Provider>

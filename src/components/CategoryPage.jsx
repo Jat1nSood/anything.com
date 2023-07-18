@@ -24,6 +24,12 @@ export default function CategoryPage() {
   
   return (
     <div className="landingCardContainer">
+
+      <div className="filterMenu">
+        Hello
+
+        <div>Hello</div>
+      </div>
       {products.map((product, index) => <Product key={product.id} id = {product.id} title={product.title} price={product.price} url={product.url} category = {product.category}/>)}
     </div>
   );

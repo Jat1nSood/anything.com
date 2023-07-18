@@ -5,6 +5,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 20px 0 15px 0 ;
+    
 }
 
 .navbar a{
@@ -49,8 +50,7 @@
     font-size: 20px
 }
 .navSearch img{
-    border: 1px solid;
-    padding: 3px;
+    mix-blend-mode :multiply;
 }
 
 .mobileMenu{
@@ -62,6 +62,9 @@
     position: relative;
 }
 
+.navCart img{
+    mix-blend-mode: multiply;
+}
 .navCart span{
     position: absolute;
     top:  -40%;
