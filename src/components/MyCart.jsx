@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import emptyCart from "../assets/emptyCart.svg";
+import greenTick from "../assets/greenTick.png";
+
 import AddedProduct from "./AddedProduct";
 import "../CSS/mycart.css";
 
 import CartContext from "../context/context";
 
 export default function MyCart() {
-  const { addedProduct } = useContext(CartContext);
+  const { addedProduct, subTotal} = useContext(CartContext);
+
 
   const [products, setProducts] = useState([]);
 
@@ -37,6 +40,7 @@ export default function MyCart() {
               rating={product.rating}
               category={product.category}
               description={product.description}
+              quantity = {product.quantity}
             />
           ))
         ) : (
@@ -48,7 +52,7 @@ export default function MyCart() {
 
         {products.length > 0 && (
           <div className="subTotal">
-            Subtotal : <span>Rs.999.00</span>
+            Subtotal : <span>{subTotal}.00</span>
             <hr />
           </div>
         )}
@@ -56,7 +60,14 @@ export default function MyCart() {
 
       {products.length > 0 && (
         <div className="subTotalCard">
-          <div>Subtotal : </div>
+
+          <div className="freeDeliveryText">
+            <img src={greenTick}/>
+          <p><span>Part of your order qualifies for FREE Delivery.</span> Select this option at checkout. Details</p>
+
+          </div>
+          <div style={{fontWeight : "600"}}>Subtotal({addedProduct.length} items): Rs.{subTotal}.00 </div>
+          <button>Proceed to buy</button>
         </div>
       )}
     </div>

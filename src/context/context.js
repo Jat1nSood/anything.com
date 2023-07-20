@@ -1,23 +1,46 @@
-import { Children, createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
+export function CartProvider({ children }) {
+    const [addedProduct, setAddedProduct] = useState([]);
+    const [subTotal, setSubTotal] = useState(0); 
+  
+    const addToCart = (title, price, url, quantity, description) => {
 
-export function CartProvider({children}){
+        console.log(quantity)
 
-    const[addedProduct, setAddedProduct] = useState([]);
 
-    const [cartQuant, setCartQuant] = useState('');
+        const numericPrice = parseFloat(price);
+  
+      const totalProductPrice = numericPrice * quantity;
+  
+      setAddedProduct((prevState) => [
+        ...prevState,
+        { title, url, price: numericPrice, quantity, description, totalProductPrice },
+      ]);
+  
+      
+      const updatedSubTotal = addedProduct.reduce(
+        (acc, product) => acc + product.totalProductPrice,
+        subTotal
+      );
+  
+      setSubTotal(updatedSubTotal);
+    };
+  
+    // useEffect(() => {
+    //   if (addedProduct.length === 1) {
+    //     setSubTotal(addedProduct[0].totalProductPrice);
+    //   }
+    // }, [addedProduct]);
 
-    const addToCart = (title, price, url,  quantity, description) =>{
-        setAddedProduct((prevState) => [...prevState, {title : title, url : url, price : price, quantity : quantity, description : description}]);
-    }
-
- 
-
-    return(
-        <CartContext.Provider value = {{addToCart, addedProduct}}>{children}</CartContext.Provider>
-    )
-
-}
-
+    console.log(subTotal)
+  
+    return (
+      <CartContext.Provider value={{ addToCart, addedProduct, subTotal }}>
+        {children}
+      </CartContext.Provider>
+    );
+  }
+  
 export default CartContext;

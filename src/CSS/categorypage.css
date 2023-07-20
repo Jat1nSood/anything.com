@@ -1,0 +1,50 @@
+.categoryMain{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.filterMenu{
+    display: flex;
+    align-items: start;
+    width: 20%;
+}
+
+.categoryCardContainerOuter{
+    display:flex;
+    flex-direction: column;
+}
+
+.categoryCardContainerHeading{
+    padding: 0 20px 0 20px;
+}
+.categoryCardContainer{display: flex;
+flex-wrap: wrap;
+gap: 40px;
+padding: 20px;
+width: 80%;
+}
+
+.sortBy{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.sortByInput{
+    display: flex;
+    gap: 5px;
+}
+
+.filterMenu button{
+    background-color: #f29c1b;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+
+}

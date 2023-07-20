@@ -10,7 +10,6 @@ import CartContext from "../context/context";
 export default function Navbar() {
 
   const {addedProduct} = useContext(CartContext);
-  console.log(addedProduct)
   const [toggle, setToggle] = useState(false);
 
   return (

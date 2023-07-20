@@ -1,11 +1,19 @@
-import React from 'react'
-import banner from '../assets/banner.jpg'
+import React from "react";
+import "../CSS/hero.css";
+import BigCards from './BigCards'
+import ProductCard from "./ProductCard";
+import TodayDeal from "./TodayDeal";
+import ShopByCategory from "./ShopByCategory";
 
+import HeroCarousel from "./HeroCarousel";
 
 export default function Hero() {
   return (
-    <div>
-        <img src={banner} alt=""/>
+    <div className="hero">
+
+      <HeroCarousel/>
+
+      
     </div>
-  )
+  );
 }
