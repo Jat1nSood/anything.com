@@ -7,41 +7,23 @@ export default function Registration() {
 
   const[name, setName] = useState('');
   const[email, setEmail] = useState('');
-  const[password, setPasssword] = useState('');
-
-  //Name storing in state
-
- const handleName = (e) =>{
-
-    setName(e.target.value);
-
-  }
-  //Email Storing in state
-  const handleEmail = (e) =>{
-
-    setEmail(e.target.value);
-
-  }
-
-  //Password Storing in state
-
-  const handlePassword = (e) =>{
-
-    setPasssword(e.target.value);
-
-  }
+  const[password, setPassword] = useState('');
 
 
-  //Handling login
+  
 
-  const handleRegistration = async() =>{
+  //Handling Registration
+
+  const handleRegistration = async(event) =>{
+    
+    console.log({ name, email, password }); // Add this line to check the data being sent
 
 
     const sendData = await  fetch(`http://localhost:5000/signup`,{
 
     method : "POST",
 
-    header : {
+    headers : {
       "Content-type" : "application/json"
     },
 
@@ -53,11 +35,26 @@ export default function Registration() {
     const response = await sendData.json();
 
     const token = response.token;
+    console.log(token)
 
     localStorage.setItem("token" , token)
 
-  
-    navigate('/');
+    if(response.message === "registered"){
+      navigate('/');
+
+    }
+    else if(response.message === "user exists"){
+      alert("User already exist");
+
+    }
+
+    else if(response.message === "parsing error"){
+      alert("Enter valid email and password")
+    }
+
+    else{
+      alert("Internal Server error")
+    }
 
   }
 
@@ -67,12 +64,12 @@ export default function Registration() {
         <div className='loginCard'>
             <h1 >Register Yourself</h1>
 
-            <input onChange={handleName} type='text' placeholder='Full Name'/>
+            <input onChange={(e) => setName(e.target.value)} type='text' placeholder='Full Name'/>
             
-            <input onChange={handleEmail} type='email' placeholder='Email'/>
+            <input onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Email'/>
 
-            <input onChange={handlePassword} type='password' placeholder='Password'/>
-            <button onClick={handleRegistration} className='loginButton'>Register</button>
+            <input onChange={(e) => setPassword(e.target.value)} type='password' placeholder='Password'/>
+            <button onClick={() => handleRegistration()} className='loginButton'>Register</button>
         </div>
     </div>
   )

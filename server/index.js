@@ -2,6 +2,8 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
+const { check, validationResult } = require( 'express-validator');
+const {z} = require('zod')
 
 //Config
 const app = express();
@@ -26,17 +28,26 @@ const generateJwt = (data) => {
   return jwt.sign(payload, secretKey); // You can also add timer here with this syntax : {expiresIn : 1h}
 };
 
-
+// Input validation
+const signUpInput = z.object({
+    name : z.string().min(3).max(50),
+    email : z.string().email("This is not a valid email"),
+    password : z.string().min(8).max(50)
+})
 //SignUp Endpoint
 
-app.post('/signup', (req, res) =>{
+app.post('/signup',(req, res) =>{
+    const parsedInput = signUpInput.safeParse(req.body);
+    if(!parsedInput.success){
+        res.status(411).json({message : "parsing error"});
+    }
 
     const user = req.body;
-
+    console.log(req.body)
     const existingUser = USERS.find( u => u.email  === user.email);
     try {
         if(existingUser){
-            res.status(403).json({message : "User Already Exist"})
+            res.status(403).json({message : "user exists"})
         }
 
         else{
@@ -44,7 +55,7 @@ app.post('/signup', (req, res) =>{
 
             const token = generateJwt(user);
         
-            res.status(200).json({message : "Account Created Successfully", token})
+            res.status(200).json({message : "registered", token})
             
         }
     } catch (error) {
