@@ -1,0 +1,17 @@
+.alsoBoughtContainer{
+
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.asloBoughtCard{
+    display: flex;
+
+}
+
+.asloBoughtCard img{
+    width: 150px;
+    height: 150px;
+}

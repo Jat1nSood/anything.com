@@ -16,6 +16,13 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: start;
 }
+.centerContainerNav{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #131921;
+}
 
 .landingcenterContainer{
 

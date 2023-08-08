@@ -17,7 +17,7 @@ function App() {
       <div className="main">
         <CartProvider>
         <Router>
-          <div className="centerContainer">
+          <div className="centerContainerNav">
             <div className="boxWidth">
               <Navbar />
             </div>

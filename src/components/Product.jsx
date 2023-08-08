@@ -50,7 +50,7 @@ export default function Product({id, url, title, price, rating, category, descri
               <p>Rs.{price}</p>
             </div>
 
-            <button onClick = {() => addToCart(title, price, url, quantity, description)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
+            <button onClick = {() => addToCart(id, title, price, url, quantity, description)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
           </div>
     )
 }

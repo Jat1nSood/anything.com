@@ -5,7 +5,7 @@ export function CartProvider({ children }) {
     const [addedProduct, setAddedProduct] = useState([]);
     const [subTotal, setSubTotal] = useState(0); 
   
-    const addToCart = (title, price, url, quantity, description) => {
+    const addToCart = (id, title, price, url, quantity, description) => {
 
         console.log(quantity)
 
@@ -16,7 +16,7 @@ export function CartProvider({ children }) {
   
       setAddedProduct((prevState) => [
         ...prevState,
-        { title, url, price: numericPrice, quantity, description, totalProductPrice },
+        {id,  title, url, price: numericPrice, quantity, description, totalProductPrice },
       ]);
   
       
@@ -27,17 +27,20 @@ export function CartProvider({ children }) {
   
       setSubTotal(updatedSubTotal);
     };
-  
-    // useEffect(() => {
-    //   if (addedProduct.length === 1) {
-    //     setSubTotal(addedProduct[0].totalProductPrice);
-    //   }
-    // }, [addedProduct]);
 
-    console.log(subTotal)
+
+    const removeProduct = (productIndex) => {
+      const updatedProducts = addedProduct.filter((product, index) => index !== productIndex
+      );
   
+      setAddedProduct(updatedProducts);
+  
+      const updatedSubTotal = updatedProducts.reduce((acc, product) => acc + product.totalProductPrice, 0);
+      setSubTotal(updatedSubTotal);
+    };
+    
     return (
-      <CartContext.Provider value={{ addToCart, addedProduct, subTotal }}>
+      <CartContext.Provider value={{ addToCart, removeProduct, addedProduct, subTotal }}>
         {children}
       </CartContext.Provider>
     );

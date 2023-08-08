@@ -4,6 +4,7 @@ import CartContext from "../context/context";
 import '../CSS/mycart.css'
 export default function AddedProduct({id, url, title, price, rating, category, description, quantity}){
   
+  const {removeProduct} = useContext(CartContext);
 
     // const [quantity, setQuantity] = useState();
     // const handleQuantityAdd = () => {
@@ -22,7 +23,13 @@ export default function AddedProduct({id, url, title, price, rating, category, d
     //     }
     //   };
     
- 
+    const handleRemove = () => {
+      console.log(id)
+      console.log(title)
+
+      removeProduct(id); 
+    };
+  
     return (
 <>
 
@@ -45,7 +52,7 @@ export default function AddedProduct({id, url, title, price, rating, category, d
                 </option>
               </select>
 
-              <button className="remove">Remove</button>
+              <button onClick={handleRemove} className="remove">Remove</button>
             </div>
           </div>
           
