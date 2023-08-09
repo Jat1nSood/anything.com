@@ -42,8 +42,7 @@ app.post('/signup',(req, res) =>{
         res.status(411).json({message : "parsing error"});
     }
 
-    const user = req.body;
-    console.log(req.body)
+    const email = parse;
     const existingUser = USERS.find( u => u.email  === user.email);
     try {
         if(existingUser){
@@ -73,12 +72,13 @@ app.post('/signup',(req, res) =>{
 
 app.post('/login', (req,res)  => {
     const user = req.body;
-
+    console.log("login", user)
     const existingUser = USERS.find(u => u.email === user.email && u.password === user.password);
 
     if(existingUser){
+        console.log("existing")
         const token = generateJwt(user);
-        res.status(200).json({message : "Logged In", token});
+        res.status(200).json({message : "logged in", token});
     }
 
     else{ 

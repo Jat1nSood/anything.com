@@ -8,31 +8,17 @@ export default function Login() {
   const[email, setEmail] = useState('');
   const[password, setPasssword] = useState('');
 
-  //Email Storing in state
-  const handleEmail = (e) =>{
 
-    setEmail(e.target.value);
-    console.log(email)
-
-  }
-
-  //Password Storing in state
-
-  const handlePassword = (e) =>{
-
-    setPasssword(e.target.value);
-
-  }
 
 
   //Handling login
 
   const handleLogin = async() =>{
 
-    const sendData = await fetch(`http:localhost:5000/login`,{
+    const sendData = await fetch(`http://localhost:5000/login`,{
       method : "POST",
 
-      header :{
+      headers :{
         "Content-type" : "application/json"
       },
 
@@ -44,17 +30,25 @@ export default function Login() {
     const token = response.token;
     localStorage.setItem('token', token);
 
-    navigate('/');
+    if(response.message === "logged in"){
+      navigate('/');
+
+    }
+
+    else{
+      alert("You are not registered or enter vadid details");
+    }
+
   }
   return (
     <div className='login'>
         <div className='loginCard'>
             <h1 >Login</h1>
-            <input onChange={(e) => handleEmail(e)} type='email' placeholder='Email'>
+            <input onChange={(e) => setEmail(e.target.value)} type='email' placeholder='Email'>
         
             </input>
 
-            <input onChange={(e) => handlePassword(e)} type='password' placeholder='Password'>
+            <input onChange={(e) => setPasssword(e.target.value)} type='password' placeholder='Password'>
 
             </input>
 

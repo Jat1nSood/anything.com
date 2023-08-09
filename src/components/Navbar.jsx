@@ -27,9 +27,9 @@ export default function Navbar() {
         <li className="navItem">
           <Link to="/register">Register</Link>
         </li>
-        <li className="navItem navSearch">
+        {/* <li className="navItem navSearch">
           <img  src={search} />
-        </li>
+        </li> */}
 
         <li className="navItem">
           <div className="navCart">

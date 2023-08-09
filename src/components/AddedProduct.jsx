@@ -42,16 +42,17 @@ export default function AddedProduct({id, url, title, price, rating, category, d
 
           <img className="myCartImage" src={url}/>
           <div className="myCartTitle">
-            <h3 style={{fontWeight:"500"}}>{title}</h3>
+            <h3 style={{fontWeight:"500"}}>{description}</h3>
             <h3>Rs.{price}</h3>
 
             <div className="myCartQuantity">
-              <select>
-                <option>
-                  {quantity}
-                </option>
-              </select>
+            <select style = {{cursor : "pointer"}}value={quantity}>
+                    <option style = {{cursor : "pointer"}}>{quantity}</option>
+                    <option style = {{cursor : "pointer"}}>1</option>
+                    <option  style = {{cursor : "pointer"}}>2</option>
+                    <option  style = {{cursor : "pointer"}}>3</option>
 
+                </select>
               <button onClick={handleRemove} className="remove">Remove</button>
             </div>
           </div>
