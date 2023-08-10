@@ -4,19 +4,22 @@ import greenTick from "../assets/greenTick.png";
 import AlsoBought from "./AlsoBought";
 import AddedProduct from "./AddedProduct";
 import "../CSS/mycart.css";
-
 import CartContext from "../context/context";
 import Product from "./Product";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { addedProduct as cartAddedProduct } from '../state/atoms/Incart';
 
 export default function MyCart() {
-  const { addedProduct, subTotal } = useContext(CartContext);
-
+  const {  subTotal } = useContext(CartContext);
+  const addedProduct = useRecoilValue(cartAddedProduct);
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
+ 
+useEffect(() => {
+  if (addedProduct) {
     setProducts(addedProduct);
-  }, []);
-
+  }
+}, [addedProduct]);
   return (
     <div className="myCartMain">
       <div
@@ -55,7 +58,7 @@ export default function MyCart() {
 
         {products.length > 0 && (
           <div className="subTotal">
-            Subtotal : <span>{subTotal}.00</span>
+            {/* Subtotal : <span>{subTotal}.00</span> */}
             <hr />
           </div>
         )}
@@ -72,7 +75,7 @@ export default function MyCart() {
               </p>
             </div>
             <div style={{ fontWeight: "600" }}>
-              Subtotal({addedProduct.length} items): Rs.{subTotal}.00{" "}
+              {/* Subtotal({addedProduct.length} items): Rs.{subTotal}.00{" "} */}
             </div>
             <button>Proceed to buy</button>
           </div>

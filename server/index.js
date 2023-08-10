@@ -42,7 +42,7 @@ app.post('/signup',(req, res) =>{
         res.status(411).json({message : "parsing error"});
     }
 
-    const email = parse;
+    const user = parsedInput.data
     const existingUser = USERS.find( u => u.email  === user.email);
     try {
         if(existingUser){
@@ -54,11 +54,11 @@ app.post('/signup',(req, res) =>{
 
             const token = generateJwt(user);
         
-            res.status(200).json({message : "registered", token})
+            res.status(200).json({message : "registered", token, name : user.name})
             
         }
     } catch (error) {
-
+console.log(error)
         res.json({message : " Internal Server Error"})
         
     }
@@ -78,7 +78,7 @@ app.post('/login', (req,res)  => {
     if(existingUser){
         console.log("existing")
         const token = generateJwt(user);
-        res.status(200).json({message : "logged in", token});
+        res.status(200).json({message : "logged in", token, name: existingUser.name});
     }
 
     else{ 

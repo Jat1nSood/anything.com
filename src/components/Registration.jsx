@@ -1,15 +1,20 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import {user as loginedUser} from '../state/atoms/User';
+import {token as jwtToken} from '../state/atoms/Token';
+import { useRecoilState } from 'recoil';
 
 export default function Registration() {
 
   const navigate = useNavigate();
 
+  //Input States
   const[name, setName] = useState('');
   const[email, setEmail] = useState('');
   const[password, setPassword] = useState('');
 
-
+  const[user, setUser] = useRecoilState(loginedUser)
+  const[token, setToken] = useRecoilState(jwtToken)
   
 
   //Handling Registration
@@ -34,12 +39,11 @@ export default function Registration() {
 
     const response = await sendData.json();
 
-    const token = response.token;
-    console.log(token)
-
-    localStorage.setItem("token" , token)
 
     if(response.message === "registered"){
+      const token = response.token;
+      setToken(token)
+      setUser(response.name)
       navigate('/');
 
     }

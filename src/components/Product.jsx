@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import banner from "../assets/banner.jpg";
 import CartContext from "../context/context";
 
+
 export default function Product({id, url, title, price, rating, category, description}){
 
   const {addToCart} = useContext(CartContext);

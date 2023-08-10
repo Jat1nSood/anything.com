@@ -3,6 +3,7 @@ import "../src/CSS/app.css";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import CategoryPage from "./components/CategoryPage";
+import {RecoilRoot} from 'recoil'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <div className="main">
+        <RecoilRoot>
         <CartProvider>
         <Router>
           <div className="centerContainerNav">
@@ -81,6 +83,7 @@ function App() {
           </Routes>
         </Router>
         </CartProvider>
+        </RecoilRoot>
       </div>
     </>
   );

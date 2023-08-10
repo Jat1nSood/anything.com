@@ -1,8 +1,16 @@
 import React, { useState } from 'react'
 import '../CSS/login.css'
 import { useNavigate } from 'react-router-dom';
+import {user as loginedUser} from '../state/atoms/User';
+import {token as jwtToken} from '../state/atoms/Token';
+
+import { useRecoilState } from 'recoil';
+
 
 export default function Login() {
+
+  const[user, setUser] = useRecoilState(loginedUser)
+  const[token, setToken] = useRecoilState(jwtToken)
 
   const navigate = useNavigate();
   const[email, setEmail] = useState('');
@@ -27,10 +35,12 @@ export default function Login() {
     })
 
     const response = await sendData.json();
-    const token = response.token;
-    localStorage.setItem('token', token);
+
 
     if(response.message === "logged in"){
+      
+      setToken(response.token);
+      setUser(response.name)
       navigate('/');
 
     }
