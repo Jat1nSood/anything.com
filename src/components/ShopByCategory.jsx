@@ -21,7 +21,7 @@ export default function ShopByCategory() {
         <Category id = {"electronics"} imgsrc={electronicsImage} name="Electronics" />
         <Category id = {"fashion"} imgsrc={product} name="Fashion" />
         <Category id = {"lifestyle"}  imgsrc={beauty} name="Lifestyle" />
-        <Category id = {"beauty"} imgsrc={grocery} name="Groceries" />
+        <Category id = {"grocery"} imgsrc={grocery} name="Groceries" />
       
     </div>
     </div>

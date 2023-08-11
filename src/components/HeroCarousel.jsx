@@ -4,6 +4,7 @@ import everydayEssentials from "../assets/everydayEssentials.jpg";
 import electronicsHero from "../assets/electronicsHero.jpg";
 import right from "../assets/right.png";
 import left from "../assets/left.png";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -11,25 +12,43 @@ import left from "../assets/left.png";
 import percentage from "../assets/%.png";
 
 export default function HeroCarousel() {
+
+  const navigate  = useNavigate();
+
+
+
   const items = [
     {
       title: "Starting 6,999",
       desc: "Smartphone",
-      url : heroSmartphone
+      url : heroSmartphone,
+      categoryname : "mobile"
     },
     {
       title: "Under 1,999",
       desc: `Top Rated Electronics & more`,
-      url : electronicsHero
-
+      url : electronicsHero,
+      categoryname : "electronics"
     },
     {
       title: "Starting 199",
       desc: "Everyday Essentials",
-      url : everydayEssentials
+      url : everydayEssentials,
+      categoryname : "essentials"
+
 
     },
   ];
+
+
+  const handleHeroClick = (categoryname) =>{
+    console.log(categoryname)
+
+    navigate(`/category/${categoryname}`);
+
+  }
+
+  
 
   const [currentItem, setCurrentItem] = useState(0);
 
@@ -41,7 +60,7 @@ export default function HeroCarousel() {
     setCurrentItem((prevItem) => (prevItem === items.length - 1 ? 0 : prevItem + 1));
   };
 
-  const { title, desc , url} = items[currentItem];
+  const { title, desc , url, categoryname} = items[currentItem];
 
   return (
     <div className="heroCarousel">
@@ -64,7 +83,7 @@ export default function HeroCarousel() {
             </div>
           </div>
         </div>
-        <img src={url} alt="Smartphone" />
+        <img style = {{cursor : "pointer"}}onClick = {() =>handleHeroClick(categoryname)}src={url} alt="Smartphone" />
       </div>
       <div className="heroArrow" onClick={handleNextSlide}>
       <img src={right}/>

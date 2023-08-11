@@ -11,8 +11,8 @@ export default function CategoryPage() {
 
   useEffect(() => {
     const filteredProduct = productData.filter(
-      (product) => product.category === categoryname
-    );
+      (product) => product.category.includes(categoryname)
+      );
     setProducts(filteredProduct);
   }, [categoryname]);
 

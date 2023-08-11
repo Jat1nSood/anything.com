@@ -39,7 +39,7 @@ export default function Navbar() {
         {token ?(<>
 
           <li className="navItem">
-           <p style={{color :"white"}}>Hello, {user}</p>
+           <p style={{color :"white"}}><span style={{color : "#f7ca00", fontWeight : "900"}}>Hello,</span> {user}</p>
          </li>
            <li className="navItem">
            <Link >My Account</Link>

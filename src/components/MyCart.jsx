@@ -58,7 +58,7 @@ useEffect(() => {
 
         {products.length > 0 && (
           <div className="subTotal">
-            {/* Subtotal : <span>{subTotal}.00</span> */}
+            Subtotal : <span>{subTotal}.00</span>
             <hr />
           </div>
         )}
@@ -75,7 +75,7 @@ useEffect(() => {
               </p>
             </div>
             <div style={{ fontWeight: "600" }}>
-              {/* Subtotal({addedProduct.length} items): Rs.{subTotal}.00{" "} */}
+              Subtotal({addedProduct.length} items): Rs.{subTotal}.00{" "}
             </div>
             <button>Proceed to buy</button>
           </div>

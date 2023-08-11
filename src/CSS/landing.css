@@ -40,6 +40,8 @@
 }
 
 .landingCard{
+    width: 220px;
+    height: 366px;
     position: relative;
 display: flex;
 flex-direction: column;
@@ -48,6 +50,17 @@ align-items: center;
     padding: 20px;
     border-radius: 20px;
     background-color: white;
+}
+.landingCardTitle{
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 8px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
 }
 
 .productRating{

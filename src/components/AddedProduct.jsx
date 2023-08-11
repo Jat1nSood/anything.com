@@ -42,8 +42,8 @@ export default function AddedProduct({id, url, title, price, rating, category, d
 
           <img className="myCartImage" src={url}/>
           <div className="myCartTitle">
-            <h3 style={{fontWeight:"500"}}>{description}</h3>
-            <h3>Rs.{price}</h3>
+            <h3 style={{fontWeight:"600" , textOverflow : "ellipse"}}>{title}</h3>
+            <h3 style={{fontWeight : "900"}}>Rs.{price}</h3>
 
             <div className="myCartQuantity">
             <select style = {{cursor : "pointer"}}value={quantity}>

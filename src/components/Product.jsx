@@ -36,7 +36,7 @@ export default function Product({id, url, title, price, rating, category, descri
             {rating}
           </div>
             <img src={url} alt="cardImage" />
-            <h2>{title}</h2>
+            <h2 className="landingCardTitle">{title}</h2>
 
             <div className="price">
               <div className="quantity">
@@ -48,7 +48,7 @@ export default function Product({id, url, title, price, rating, category, descri
                   -
                 </p>
               </div>
-              <p>Rs.{price}</p>
+              <p style={{fontWeight : "900"}}>Rs.{price}</p>
             </div>
 
             <button onClick = {() => addToCart(id, title, price, url, quantity, description)} className= {basketCliked ? "addToCart" : "addToCart"}>Add To Basket</button>
