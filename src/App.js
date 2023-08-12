@@ -11,6 +11,8 @@ import Registration from "./components/Registration";
 
 import { CartProvider } from "./context/context";
 import MyCart from "./components/MyCart";
+import SoloProduct from "./components/SoloProduct";
+import MyOrders from "./components/MyOrders";
 
 function App() {
   return (
@@ -76,6 +78,28 @@ function App() {
                 <div className="centerContainer">
                   <div className="boxWidth">
                     <CategoryPage />
+                  </div>
+                </div>
+              }
+            />
+
+<Route
+              path="/soloproduct/:id"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <SoloProduct />
+                  </div>
+                </div>
+              }
+            />
+
+<Route
+              path="/myorders"
+              element={
+                <div className="centerContainer">
+                  <div className="boxWidth">
+                    <MyOrders />
                   </div>
                 </div>
               }

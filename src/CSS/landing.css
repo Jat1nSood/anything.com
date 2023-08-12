@@ -73,6 +73,7 @@ align-items: center;
     width: 180px;
     height: 150px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .price{

@@ -4,7 +4,7 @@
             "id" : "1",
 "url" : "https://m.media-amazon.com/images/I/61dKCBfKtSL._UY695_.jpg",            "title" : "Dress",
             "price" : "749",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -13,7 +13,7 @@
             "id" : "2",
 "url" : "https://m.media-amazon.com/images/I/61Plah-YC7L._UY695_.jpg"   ,         "title" : "Red Tape Grey Sports Shoes for Men's- Lace-Up Shoes, Perfect Walking & Running Shoes for Men",
             "price" : "1199",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -23,7 +23,7 @@
             "url" : "https://m.media-amazon.com/images/I/81Qi5P+GYbL._AC_UL600_FMwebp_QL65_.jpg",
             "title" : "ASIAN Men's Thar-01 Sports Running,Walking & Gym Shoes with Eva Sole Extra Jump Casual Sneaker Shoes for Men's & Boy's",
             "price" : "674",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -32,7 +32,7 @@
             "id" : "4",
 "url":"https://m.media-amazon.com/images/I/41mWz2aRrTL._AC_UL600_FMwebp_QL65_.jpg"       ,     "title" : "ASIAN Men's Delta-20 Sports Running,Walking & Gym Shoes with Eva Sole Extra Jump Casual Sneaker Lightweight Lace-Up Shoes for Men's & Boy's",
             "price" : "724",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -42,7 +42,7 @@
             "url" : "data:image/jpeg;base64,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",
             "title" : "Dress",
             "price" : "999",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -52,7 +52,7 @@
             "url" : "data:image/jpeg;base64,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",
             "title" : "Dress",
             "price" : "999",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -62,7 +62,7 @@
             "url" : "data:image/jpeg;base64,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",
             "title" : "Dress",
             "price" : "999",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -73,7 +73,7 @@
             "url" : "data:image/jpeg;base64,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",
             "title" : "Dress",
             "price" : "999",
-            "category": ["fasion", "shoes", "shoe"], 
+            "category": ["fashion", "shoes", "shoe"], 
             
             "rating" : "4/5",
             "description" : "Red Chief Leather with Lace Casual Shoes for Men RC3424"
@@ -306,11 +306,380 @@
               "url": "https://m.media-amazon.com/images/I/41h5gYxE5kL._AC_UL600_FMwebp_QL65_.jpg",
               "title": "CARPANELLI Wooden Bazar Chesterfield Sofa 3 Seater Couch Chaise Lounge Sectional Sofa for Home & Living Room & Office & Guest Room (Grey)",
               "price": "17599",
-              "category": [],
+              "category": ["furniture", "decoration", "sofa"],
               "tag": "",
               "rating": ""
-            }
-          ]
+            },
+            
+                {
+                  "id": "41",
+                  "url": "https://m.media-amazon.com/images/I/61G8GrNRYqL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "Minimalist 0.3% Ceramide Moisturizing Cream For Barrier Repair & Deep Moisturization, Daily Repairing Face Moisturizer For Normal To Dry Skin, 50g",
+                  "price": "699",
+                  "category": ["lifestyle", "makeup", "cream", "mosturizer"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "42",
+                  "url": "https://m.media-amazon.com/images/I/61APEXwb28L._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "SKYNFUL Crocus Gel 50ml | Chemical-free & 100% Vegan | Saffron Face Gel that Nourishes, Moisturizes, Helps Reducing Wrinkles, Reduce Acne and Repair Skin | All Skin Types | FDA Approved | Pack Of 1",
+                  "price": "249",
+                  "category": ["lifestyle", "makeup", "cream"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "43",
+                  "url": "https://m.media-amazon.com/images/I/41PeR-8q92L._SX300_SY300_QL70_FMwebp_.jpg",
+                  "title": "Bella Vita Luxury Skai Aquatic Eau De Cologne Unisex Perfume for Men & Women with Bergamot, Pink Pepper |Long Lasting Aqua EDC Fragrance Scent, 100 Ml",
+                  "price": "482",
+                  "category": ["lifestyle", "makeup", "perfume"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "44",
+                  "url": "https://m.media-amazon.com/images/I/511yAirvs0L._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "The Man Company Activated Charcoal Face Wash for Men - 100ml | Daily Exfoliating & Brightening Cleanser | Enriched with Ylang Ylang & Argan Essential Oils | Anti Pollution, Acne Oil Control | Deep Cleansing | Blackheads Removal",
+                  "price": "399",
+                  "category": ["lifestyle", "makeup", "perfume"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "45",
+                  "url": "https://m.media-amazon.com/images/I/61senQ0XZgL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "French Connection Analog Blue Dial Women's Watch-FCL22-C",
+                  "price": "2229",
+                  "category": ["electronics", "watch"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "46",
+                  "url": "https://m.media-amazon.com/images/I/71K75J1E3HL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "French Connnection Analog Dial Women's Watch",
+                  "price": "3828",
+                  "category": ["electronics", "watch", "womens"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "47",
+                  "url": "https://m.media-amazon.com/images/I/51sb0o2bR0L._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "Bombay Shaving Co Silver Metal Precision Safety Razor For Men With Feather Blades | Gift Set For Men | Shaving Razor For Men | Father's Day Gifts, Gifts For Men",
+                  "price": "1299",
+                  "category": ["lifestyle", "mens", "razor"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "48",
+                  "url": "https://m.media-amazon.com/images/I/71LLgXLWYLL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "Lifestyle Goods Forever LSGF Morden True Innovations Mid Century Button Tufted Lounge Chair for Small Apartments, Living Room or Bedroom (Set of 2 Chairs, Blue)",
+                  "price": "59990",
+                  "category": ["furniture", "sofa","decoration"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "49",
+                  "url": "https://m.media-amazon.com/images/I/61zI-RCQ6PL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "Code Women dress",
+                  "price": "1099",
+                  "category": ["fashion","womens clothes", "dress"],
+                  "tag": "",
+                  "rating": ""
+                },
+                {
+                  "id": "50",
+                  "url": "https://m.media-amazon.com/images/I/61QjqPsG8tL._AC_UL600_FMwebp_QL65_.jpg",
+                  "title": "Code by Lifestyle Women's Regular Fit Tunic Shirt (1000012111927-WINE_Red 8)",
+                  "price": "959",
+                  "category": ["fashion","womens clothes", "dress"],
+                  "tag": "",
+                  "rating": ""
+                },
+                
+                    {
+                      "id": "51",
+                      "url": "https://m.media-amazon.com/images/I/61GfkeQGtGL._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "Code Women Tunic Shirt",
+                      "price": "799",
+                      "category": ["fashion","womens clothes", "dress"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "52",
+                      "url": "https://m.media-amazon.com/images/I/71JHgbPaLGL._UY879_.jpg",
+                      "title": "Fame Forever Women Tunic Shirt",
+                      "price": "629",
+                      "category": ["fashion","womens clothes", "dress"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "53",
+                      "url": "https://m.media-amazon.com/images/I/61hMQwHKKuL._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "Code by Lifestyle Women's Polyester A-Line Knee-Length Dress (1000012080874-MUSTARD_Yellow",
+                      "price": "959",
+                      "category": ["fashion","womens clothes", "dress"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "54",
+                      "url": "https://m.media-amazon.com/images/I/51zXMtwOPFL._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "MOZAFIA Casual Canvas High Ankle Comfortable Lifestyle Sneaker Shoe for Women",
+                      "price": "649",
+                      "category": ["fashion", "shoes", "shoe", "womens shoes"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "55",
+                      "url": "https://m.media-amazon.com/images/I/51TVkEFx9KL._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "GINGER by Lifestyle Women Purple Sandals",
+                      "price": "849",
+                      "category": ["fashion", "shoes", "shoe", "womens shoes", "sandals"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "56",
+                      "url": "https://m.media-amazon.com/images/I/41edfiw4GnL._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "GINGER BY LIFESTYLE  Womens Regular Eva Tong",
+                      "price": "420",
+                      "category": ["fashion", "shoes", "shoe", "womens shoes", "sandals"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "57",
+                      "url": "https://images-eu.ssl-images-amazon.com/images/I/810-BAwpF9L._AC_UL320_SR320,320_.jpg",
+                      "title": "Redmi A2 (Classic Black, 2GB RAM, 32GB Storage) | Powerful Octa Core G36 Processor | Upto 7GB RAM | Large 16.5 cm HD+ Display with Massive 5000mAh Battery | 2 Years Warranty [Limited time Offer]",
+                      "price": "6499",
+                      "category": ["electronics", "mobile"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "58",
+                      "url": "https://m.media-amazon.com/images/I/41whLURV98L._AC_UL600_FMwebp_QL65_.jpg",
+                      "title": "ILU Slipper For Women's Flip Flops Fur Winter Fashion House Slides Home Indoor Outdoor Sandals",
+                      "price": "499",
+                      "category": ["fashion", "shoes", "shoe", "womens shoes", "sandals"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "59",
+                      "url": "https://m.media-amazon.com/images/I/51w8gvNkmDL._AC_UL960_FMwebp_QL65_.jpg",
+                      "title": "FASHNEX Resistance Tube with Foam Handles for Stretching, Mobility, Weight Training. The Toning Tube Resistance Band is for Home Workout for Men/Women. (As per Image) ,Natural Rubber;Foam",
+                      "price": "499",
+                      "category": ["gym", "resitance tube"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    {
+                      "id": "60",
+                      "url": "https://m.media-amazon.com/images/I/61HObZ65q9L._AC_UL960_FMwebp_QL65_.jpg",
+                      "title": "HASHTAG FITNESS Wall mount pull up bar, wall mount 3 in 1, dips station, home gym equipments, height increasing equipments for men,kids and women (Black)",
+                      "price": "2349",
+                      "category": ["gym"," hanging bar"],
+                      "tag": "",
+                      "rating": ""
+                    },
+                    
+                        {
+                          "id": "71",
+                          "url": "https://m.media-amazon.com/images/I/71pSUUtTcfL._AC_SR405,405_.jpg",
+                          "title": "Strauss Adjustable Hand Grip| Adjustable Resistance (10KG - 40KG) | Hand/Power Gripper for Home & Gym Workouts | Perfect for Finger & Forearm Hand Exercises & Strength Building for Men & Women (Black)",
+                          "price": "249",
+                          "category": ["gym", "hand gripper"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "72",
+                          "url": "https://m.media-amazon.com/images/I/61Ff+plZvTL._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "Flexnest Adjustable Iron Dumbbells Set, Designed-in-Germany, Easy Weight Adjustment (2.5Kg-24Kg), Home Workout, Gym Exercise Set For Men & Women, 24Kg, Set of 2 (Black)",
+                          "price": "16998",
+                          "category": ["gym", "dumbbells"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "73",
+                          "url": "https://m.media-amazon.com/images/I/81vUNq4jMkL._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "Aurion PVC Encase Coating Free Weight Dumbbell Set 2kg*2 (Black) | For Home and Gym Use | Strength Training Equipment | Home and Gym Fitness | Full Body Workout | Dumbbells For Men and Women Exercise",
+                          "price": "298",
+                          "category": ["gym", "dumbbells"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "74",
+                          "url": "https://m.media-amazon.com/images/I/61x1Zonlr1L._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "Surf Excel Detergent Bar, Laundry Detergent Bar For Clothes, Removes Tough Stains, New long lasting fragrance, 4x200 g",
+                          "price": "125",
+                          "category": ["essentials", "detergent", "grocery"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "75",
+                          "url": "https://m.media-amazon.com/images/I/51jJq4jToUL._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "Dove Cream Beauty Bathing Soap Bar 125g (Combo Pack of 8) | With Moisturising Cream for Softer Skin & Body, Nourishes Dry Skin more than Ordinary Soap",
+                          "price": "740",
+                          "category": ["essentials", "grocery", "soap"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "76",
+                          "url": "https://m.media-amazon.com/images/I/61Oq0e2OgWL._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "RiteBite Max Protein Daily Choco Almond 10g Protein Bars [Pack of 6] Protein Blend, Fiber, Vitamins & Minerals, No Preservatives, 100% Veg, No Added Sugar, for Energy, Fitness & Immunity - 300g",
+                          "price": "405",
+                          "category": ["gym", "food"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "77",
+                          "url": "https://m.media-amazon.com/images/I/71EekR5AZCL._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "Amazon Brand - Symbol Mens Carlos Formal Shoes",
+                          "price": "719",
+                          "category": ["fashion", "shoes", "formal shoes"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "78",
+                          "url": "https://m.media-amazon.com/images/I/71eMcroT2IS._AC_UL600_FMwebp_QL65_.jpg",
+                          "title": "BATA Mens Boss-ace Uniform Dress Shoe",
+                          "price": "729",
+                          "category": ["fashion","shoes","formal shoes"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "79",
+                          "url": "https://m.media-amazon.com/images/I/61QlYmV8owL._UY879_.jpg",
+                          "title": "Peppyzone Men's Cotton Checked Printed Casual Shirt",
+                          "price": "569",
+                          "category": ["fashion","shirts", "mens"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        {
+                          "id": "80",
+                          "url": "https://m.media-amazon.com/images/I/71-HrqmMM1L._AC_UY327_FMwebp_QL65_.jpg",
+                          "title": "Acer 80 cm (32 inches) Advanced I Series HD Ready Smart LED Google TV AR32GR2841HDFL (Black)",
+                          "price": "12999",
+                          "category": ["electronics", "tv", "television", "smart tv"],
+                          "tag": "",
+                          "rating": ""
+                        },
+                        
+                            {
+                              "id": "81",
+                              "url": "https://m.media-amazon.com/images/I/819Lw2PE8tL._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "Redmi 80 cm (32 inches) HD Ready Smart LED Fire TV L32R8-FVIN (Black)",
+                              "price": "14999",
+                              "category": ["electronics", "tv", "television", "smart tv"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "82",
+                              "url": "https://m.media-amazon.com/images/I/71d5fMDvq9L._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "OnePlus 80 cm (32 inches) Y Series HD Ready LED Smart Android TV 32Y1 (Black)",
+                              "price": "16999",
+                              "category": ["electronics", "tv", "television", "smart tv"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "83",
+                              "url": "https://m.media-amazon.com/images/I/81+JXgPUDLL._AC_UY327_QL65_.jpg",
+                              "title": "Samsung 138 cm (55 inches) Crystal iSmart 4K Ultra HD Smart LED TV UA55CUE60AKLXL (Black)",
+                              "price": "45990",
+                              "category": ["electronics", "tv", "television", "smart tv"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "84",
+                              "url": "https://m.media-amazon.com/images/I/91RnDCyguML._AC_UY327_QL65_.jpg",
+                              "title": "Samsung 214 cm (85 inches) 8K Ultra HD Smart Neo QLED TV QA85QN900CKXXL (Titan Black)",
+                              "price": "12000",
+                              "category": ["electronics", "tv", "television", "smart tv"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "85",
+                              "url": "https://m.media-amazon.com/images/I/8153wOcQNML._AC_UY327_QL65_.jpg",
+                              "title": "Samsung 138 cm (55 inches) 4K Ultra HD Smart QLED TV QA55QE1CAKLXL (Titan Gray)",
+                              "price": "69690",
+                              "category": ["electronics", "tv", "television", "smart tv"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "86",
+                              "url": "https://m.media-amazon.com/images/I/61kQgdgnFQL._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "LG 655 L Frost-Free Inverter Side-By-Side Refrigerator (2023 Model, GL-B257HDSY, Dazzle Steel, Express Freeze | Multi Air-Flow)",
+                              "price": "83990",
+                              "category": ["electronics", "fridge", "refrigrator"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "87",
+                              "url": "https://m.media-amazon.com/images/I/61-oBRR7TbL._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "Samsung 189 L 5 Star Digital Inverter Direct Cool Single Door Refrigerator(RR21C2H25S8/HL, Silver, Elegant Inox, Base Stand with Drawer 2023 Model)",
+                              "price": "16990",
+                              "category": ["electronics", "fridge", "refrigrator"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "88",
+                              "url": "https://m.media-amazon.com/images/I/51uwQYBY1fL._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "Hisense 564 L Inverter Frost-Free Side-by-Side Door Refrigerator with Water Dispenser (RS564N4SSNW, Silver Stainless Steel Finish)",
+                              "price": "51990",
+                              "category": ["electronics", "fridge", "refrigrator"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "89",
+                              "url": "https://m.media-amazon.com/images/I/61L2hMq966L._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "Godrej 45 L 2 Star Minibar Refrigerator With adjustable Temperature (2023 Model, RD CHAMP 45B RF GR SL, Grey Silver)",
+                              "price": "8990",
+                              "category": ["electronics", "fridge", "refrigrator"],
+                              "tag": "",
+                              "rating": ""
+                            },
+                            {
+                              "id": "90",
+                              "url": "https://m.media-amazon.com/images/I/51zBm351prL._AC_UY327_FMwebp_QL65_.jpg",
+                              "title": "Whirlpool 184 L 3 Star Direct-Cool Single Door Refrigerator (205 WDE CLS 3S SAPPHIRE BLUE-Z, Sapphire Blue, Blue, 2023 Model)",
+                              "price": "13840",
+                              "category": ["electronics", "fridge", "refrigrator"],
+                              "tag": "",
+                              "rating": ""
+                            }
+                          
+                          
+                      
+                  ]
+                  
+            
           
         
         

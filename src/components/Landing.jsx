@@ -7,6 +7,7 @@ import ProductCard from "./ProductCard";
 import TodayDeal from "./TodayDeal";
 import ShopByCategory from "./ShopByCategory";
 export default function Landing() {
+
     
     
  

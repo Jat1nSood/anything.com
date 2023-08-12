@@ -1,9 +1,11 @@
 import React, { useContext, useState } from "react";
 import banner from "../assets/banner.jpg";
 import CartContext from "../context/context";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Product({id, url, title, price, rating, category, description}){
+  const navigate = useNavigate();
 
   const {addToCart} = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
@@ -30,12 +32,19 @@ export default function Product({id, url, title, price, rating, category, descri
         setbasketClicked(true)
 
       }
+
+      const handleProductClick = ()=>{
+
+        navigate(`/soloproduct/${id}`)
+
+        
+      }
     return (
         <div className="landingCard" key={id}>
           <div className="productRating">
             {rating}
           </div>
-            <img src={url} alt="cardImage" />
+            <img onClick={handleProductClick} src={url} alt="cardImage" />
             <h2 className="landingCardTitle">{title}</h2>
 
             <div className="price">

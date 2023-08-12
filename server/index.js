@@ -14,6 +14,7 @@ app.use(express.json());
 const PORT = 5000;
 
 // Array for now
+let ORDERS = [];
 let ADMINS = [];
 let USERS = [];
 let COURSES = [];
@@ -76,9 +77,9 @@ app.post('/login', (req,res)  => {
     const existingUser = USERS.find(u => u.email === user.email && u.password === user.password);
 
     if(existingUser){
-        console.log("existing")
+        console.log(existingUser.email)
         const token = generateJwt(user);
-        res.status(200).json({message : "logged in", token, name: existingUser.name});
+        res.status(200).json({message : "logged in", token, name: existingUser.name, email : existingUser.email});
     }
 
     else{ 
@@ -89,8 +90,43 @@ app.post('/login', (req,res)  => {
 
 })
 
+//Order Add
+
+app.post('/buynow', (req, res) => {
+
+    const neworder =req.body;
+
+    const existingUserIndex = ORDERS.findIndex(o=> o.user === neworder.user);
+        if(existingUserIndex !== -1){
+            ORDERS[existingUserIndex].addedProduct.push(...neworder.addedProduct);
+        }
+else{
+
+    ORDERS.push(neworder);
 
 
+}
+    
+
+    res.status(200).json({message : "done"});
+    console.log(ORDERS)
+
+
+})
+
+//Orders Fetch
+
+
+app.get('/myorders', (req, res) =>{
+
+    const { user } = req.query;
+
+
+    const orders = ORDERS.find( o => o.user === user);
+
+    res.json({order : orders})
+
+})
 
 app.listen(PORT, () => {
   console.log(`Server is Running on Port : ${PORT}`);

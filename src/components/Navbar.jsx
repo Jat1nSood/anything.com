@@ -45,7 +45,7 @@ export default function Navbar() {
            <Link >My Account</Link>
          </li>
          <li className="navItem">
-           <Link >My Orders</Link>
+           <Link to='/myorders' >My Orders</Link>
          </li>
          <li className="navItem">
            <Link onClick={handleLogOut}>Log Out</Link>

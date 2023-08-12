@@ -8,18 +8,54 @@ import CartContext from "../context/context";
 import Product from "./Product";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { addedProduct as cartAddedProduct } from '../state/atoms/Incart';
+import { useNavigate } from "react-router-dom";
+import {userEmail as loggedInEmail} from '../state/atoms/Email';
+
 
 export default function MyCart() {
+
+  const userEmail = useRecoilValue(loggedInEmail)
+  const navigate = useNavigate();
   const {  subTotal } = useContext(CartContext);
-  const addedProduct = useRecoilValue(cartAddedProduct);
+  // const addedProduct = useRecoilValue(cartAddedProduct);
+  const [addedProduct, setaddedProduct] = useRecoilState(cartAddedProduct);
   const [products, setProducts] = useState([]);
 
- 
+  const user = 'jatinsood@gmail.com'; // Replace with the actual logged-in user's identifier
+
 useEffect(() => {
   if (addedProduct) {
     setProducts(addedProduct);
   }
 }, [addedProduct]);
+
+
+
+//Handle Proceed to buy
+
+const handelBuy = async() =>{
+
+  const sendData = await fetch(`http://localhost:5000/buynow`,{
+    method :"POST",
+    headers : {
+      "Content-type" : "application/json"
+},
+
+body : JSON.stringify({addedProduct : addedProduct, user : userEmail})
+  })
+
+
+  const response = await sendData.json();
+
+  if(response.message === "done"){
+
+    alert("Your Order has been placed");
+    setaddedProduct([]);
+    navigate('/')
+
+  }
+
+}
   return (
     <div className="myCartMain">
       <div
@@ -77,7 +113,7 @@ useEffect(() => {
             <div style={{ fontWeight: "600" }}>
               Subtotal({addedProduct.length} items): Rs.{subTotal}.00{" "}
             </div>
-            <button>Proceed to buy</button>
+            <button onClick={handelBuy}>Proceed to buy</button>
           </div>
           <div className="alsoBought">
 

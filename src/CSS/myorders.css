@@ -1,0 +1,20 @@
+.myorderCard{
+
+    display: flex;
+    width: 60%;
+    padding: 40px 20px 40px 20px;
+    border-bottom: 1px solid;
+
+
+}
+
+.myorderCardImage{
+    padding: 20px;
+}
+.myorderCard img{
+    width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
