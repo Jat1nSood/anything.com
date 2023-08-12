@@ -1,13 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import cart from "../assets/cart.png";
 import menu from "../assets/menu.svg";
 
-import search from "../assets/search.png";
 import "../CSS/navbar.css";
 import { Link } from "react-router-dom";
 
 import CartContext from "../context/context";
-import { constSelector, useRecoilValue } from "recoil";
+import {  useRecoilValue } from "recoil";
 import {user as loginedUser} from '../state/atoms/User';
 import {token as jwtToken} from '../state/atoms/Token';
 
@@ -30,9 +29,7 @@ export default function Navbar() {
 
     <nav className="navbar">
       <Link to="/" className="navLogo">
-        <Link to="/">
-          <h1>Anything.com</h1>
-        </Link>
+        <h1>Anything.com</h1>
       </Link>
 
       <ul className="navItems">
@@ -53,7 +50,7 @@ export default function Navbar() {
            <li className="navItem">
            <div className="navCart">
              <Link to={"/mycart"}>
-               <img src={cart} />
+               <img src={cart} alt="" />
              </Link>
              <span>{addedProduct.length}</span>
            </div>
@@ -74,7 +71,7 @@ export default function Navbar() {
         <li className="navItem">
           <div className="navCart">
             <Link to={"/mycart"}>
-              <img src={cart} />
+              <img src={cart} alt="" />
             </Link>
             <span>{addedProduct.length}</span>
           </div>

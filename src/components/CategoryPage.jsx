@@ -17,7 +17,7 @@ export default function CategoryPage() {
   }, [categoryname]);
 
   return (
-    <dic className="categoryMain">
+    <div className="categoryMain">
       <div className="filterMenu">
         <div className="sortBy">
           <h3>Sort by</h3>
@@ -56,6 +56,6 @@ export default function CategoryPage() {
           ))}
         </div>
       </div>
-    </dic>
+    </div>
   );
 }
