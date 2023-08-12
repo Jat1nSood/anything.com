@@ -27,59 +27,57 @@ export default function BigCards() {
         <div className='bigCardContainer'>
             <div className='bigCard'>
                 <h2>Makeup products</h2>
-                <img src={makeup}/>
+                <img src={makeup} alt=""/>
                 <Link onClick = {handleSeeMore("makeup")}className='bigCardLink'><p>See more</p></Link>
             </div>
 
             <div className='bigCard'>
                 <h2>New looks for new season </h2>
-                <img src={fashion}/>
+                <img src={fashion} alt=""/>
                 <Link onClick = {handleSeeMore("fashion")}className='bigCardLink'><p>See more</p></Link>
 
             </div>
             <div className='bigCard'>
                 <h2>Do up your home</h2>
-                <img src={home}/>
+                <img src={home} alt=""/>
                 <Link onClick = {() =>handleSeeMore("decoration")}className='bigCardLink'><p>See more</p></Link>
 
             </div>
             <div className='bigCard'>
                 <h2>Smart Gadgets</h2>
-                <img src={gadgets}/>
+                <img src={gadgets} alt=""/>
                 <Link onClick = {()=>handleSeeMore("smart gadgets")} className='bigCardLink'><p>See more</p></Link>
 
             </div>
             <div className='bigCard'>
                 <h2>Value bazar</h2>
-                <img src={bazar}/>
+                <img src={bazar} alt=""/>
                 <Link onClick = {()=>handleSeeMore("grocery")}className='bigCardLink'><p>See more</p></Link>
 
             </div>
 
             <div className='bigCard'>
                 <h2>Work from home essentials</h2>
-                <img src={wfh}/>
+                <img src={wfh} alt=""/>
                 <Link onClick = {()=>handleSeeMore("wfh")} className='bigCardLink'><p>See more</p></Link>
 
             </div>
 
             <div className='bigCard'>
                 <h2>Revamp your home in style </h2>
-                <img src={revamp}/>
+                <img src={revamp} alt=""/>
                 <Link onClick = {() =>handleSeeMore("furniture")} className='bigCardLink'><p>See more</p></Link>
 
             </div>
 
             <div className='bigCard'>
                 <h2>Gym equipments</h2>
-                <img src={gym}/>
+                <img src={gym} alt=""/>
                 <Link onClick = {() =>handleSeeMore("gym")}className='bigCardLink'><p>See more</p></Link>
 
             </div>
         </div>
 
-
-      
     </div>
   )
 }
