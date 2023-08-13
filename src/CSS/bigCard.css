@@ -24,6 +24,7 @@
 .bigCardLink {
     text-decoration: none;
     color: rgb(3, 140, 140);
+    cursor: pointer;
 }
 
 .bigCardLink:hover {

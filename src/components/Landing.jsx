@@ -38,9 +38,9 @@ export default function Landing() {
 
 
 
-<div>
+{/* <div>
     <ProductCard/>
-</div>
+</div> */}
     </div>
   );
 }

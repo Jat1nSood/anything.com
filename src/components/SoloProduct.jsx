@@ -45,12 +45,7 @@ export default function SoloProduct() {
           <h2>Rs {price}</h2>
           <button onClick={() => addToCart(id, title, price, url)}>Add to cart</button>
 
-          <div className="soloReviews">
-
-            <h3>Review</h3>
-            
-            <button>Add Review</button>
-          </div>
+         
         </div>
       </div>
     </div>

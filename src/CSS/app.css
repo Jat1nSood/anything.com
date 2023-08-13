@@ -23,6 +23,13 @@ font-family: 'Poppins', sans-serif;
     align-items: start;
     background-color: #131921;
 }
+.centerContainerfooter{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #232f3e;
+}
 
 .landingcenterContainer{
 

@@ -17,30 +17,55 @@ background-repeat: no-repeat;
   
 
 .heroCarousel{
+    position: relative;
     width: 100%;
     padding: 50px 0 50px 0;
     display: flex;
     justify-content: center;
-    /* gap: 50px; */
-    justify-content: space-between;
-    align-items: center;
 
-}
+    
+  }
+
+  .heroDetails{
+  }
+  .carouselComp{
+    display: flex;
+    justify-content: center;
+  }
+
+  .active{
+    opacity: 0;
+  }
+  
+
 .hero img{
     mix-blend-mode: multiply;
     width: 450px;
     height: 250px;
     
 }
-.heroArrow{
-    display: flex;
-    height: 100%;
-    align-items: center;
+.heroArrowLeft{
+    position: absolute;
+    left: 0;
+    top: 40%;
     cursor: pointer;
     padding: 20px;
 }
 
-.heroArrow img{
+.heroArrowLeft img{
+    width: 30px;
+    height: 30px;
+}
+
+.heroArrowRight{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.heroArrowRight img{
     width: 30px;
     height: 30px;
 }

@@ -51,7 +51,7 @@ export default function MyOrders() {
           ))}
         </ul>
       ) : (
-        <p>No orders available.</p>
+        <p>You have not placed any order :(</p>
       )}
     </div>
   );

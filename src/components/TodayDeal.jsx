@@ -6,6 +6,7 @@ import PC from "../assets/PC.jpg";
 import tv from "../assets/tv.jpg";
 import  accessories from "../assets/accessories.jpg";
 import  clothes from "../assets/clothes.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -13,6 +14,10 @@ import  clothes from "../assets/clothes.jpg";
 
 
 export default function TodayDeal() {
+  const navigate = useNavigate();
+  const handleClick = (where)=>{
+    navigate(`/category/${where}`)
+  }
   return (
     <div className="todayDealsContainer">
       <h1>Today's Deals</h1>
@@ -20,7 +25,7 @@ export default function TodayDeal() {
 
       <div className="dealsCardContainer">
         <div className="todayDealsCard">
-          <img src={product} />
+          <img onClick={() =>handleClick('fashion')}  src={product} />
           <div className="todayDealTitle">Upto 50% off </div>
           <div className="todayDealDescription">
             Shirts, Joggers & more
@@ -28,7 +33,7 @@ export default function TodayDeal() {
         </div>
 
         <div className="todayDealsCard">
-        <img src={PC} />
+        <img onClick={() =>handleClick('pc')} src={PC} />
           <div className="todayDealTitle">Upto 50% off </div>
           <div className="todayDealDescription">
            Best offers on PC 
@@ -38,7 +43,7 @@ export default function TodayDeal() {
         </div>
 
         <div className="todayDealsCard">
-        <img src={bata} />
+        <img onClick={()=>handleClick('shoes')}src={bata} />
           <div className="todayDealTitle">Upto 50% off </div>
           <div className="todayDealDescription">
             Bata, Hush & more
@@ -46,14 +51,14 @@ export default function TodayDeal() {
         </div>
 
         <div className="todayDealsCard">
-        <img src={tv} />
+        <img onClick={()=>handleClick('electronics')} src={tv} />
           <div className="todayDealTitle">Upto 50% off </div>
           <div className="todayDealDescription">
             TV, Refrigerator & more
           </div>
         </div>
         <div className="todayDealsCard">
-        <img src={clothes} />
+        <img onClick={()=>handleClick('fashion')} src={clothes} />
           <div className="todayDealTitle">Upto 50% off</div>
           <div className="todayDealDescription">
             Shirts, Joggers & more
@@ -61,7 +66,7 @@ export default function TodayDeal() {
         </div>
 
         <div className="todayDealsCard">
-        <img src={accessories} />
+        <img onClick={()=>handleClick('electronics')} src={accessories} />
           <div className="todayDealTitle">Upto 50% off </div>
           <div className="todayDealDescription">
             Mobile, Accessories & more

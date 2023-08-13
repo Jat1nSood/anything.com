@@ -24,82 +24,77 @@ export default function BigCards() {
         <div className="bigCard">
           <h2>Makeup products</h2>
           <img src={makeup} alt="" />
-          {/* <Link onClick={() => handleSeeMore("makeup")} className="bigCardLink">
+          {/* <Link onClick={() => handleSeeMore("makeup")} >
             <p>See more</p>
           </Link> */}
 
-        <button type="button" onClick={() => handleSeeMore("makeup")} className="bigCardLink">
-            <p>See more</p>
-        </button>
-          
+          <p className="bigCardLink" onClick={() => handleSeeMore("makeup")}>
+            See more
+          </p>
         </div>
 
         <div className="bigCard">
           <h2>New looks for new season </h2>
           <img src={fashion} alt="" />
-          <button
-            onClick={() => handleSeeMore("fashion")}
-            className="bigCardLink"
-          >
-            <p>See more</p>
-          </button>
+
+          <p className="bigCardLink" onClick={() => handleSeeMore("fashion")}>
+            See more
+          </p>
         </div>
         <div className="bigCard">
           <h2>Do up your home</h2>
           <img src={home} alt="" />
-          <button
-            onClick={() => handleSeeMore("decoration")}
+
+          <p
             className="bigCardLink"
+            onClick={() => handleSeeMore("decoration")}
           >
-            <p>See more</p>
-          </button>
+            See more
+          </p>
         </div>
         <div className="bigCard">
           <h2>Smart Gadgets</h2>
           <img src={gadgets} alt="" />
-          <button
+
+          <p
             onClick={() => handleSeeMore("smart gadgets")}
             className="bigCardLink"
           >
-            <p>See more</p>
-          </button>
+            See more
+          </p>
         </div>
         <div className="bigCard">
           <h2>Value bazar</h2>
           <img src={bazar} alt="" />
-          <button
-            onClick={() => handleSeeMore("grocery")}
-            className="bigCardLink"
-          >
-            <p>See more</p>
-          </button>
+
+          <p onClick={() => handleSeeMore("grocery")} className="bigCardLink">
+            See more
+          </p>
         </div>
 
         <div className="bigCard">
           <h2>Work from home essentials</h2>
           <img src={wfh} alt="" />
-          <button onClick={() => handleSeeMore("wfh")} className="bigCardLink">
-            <p>See more</p>
-          </button>
+          <p onClick={() => handleSeeMore("wfh")} className="bigCardLink">
+            See more
+          </p>
         </div>
 
         <div className="bigCard">
           <h2>Revamp your home in style </h2>
           <img src={revamp} alt="" />
-          <button
-            onClick={() => handleSeeMore("furniture")}
-            className="bigCardLink"
-          >
-            <p>See more</p>
-          </button>
+
+          <p onClick={() => handleSeeMore("furniture")} className="bigCardLink">
+            See more
+          </p>
         </div>
 
         <div className="bigCard">
           <h2>Gym equipments</h2>
           <img src={gym} alt="" />
-          <button onClick={() => handleSeeMore("gym")} className="bigCardLink">
-            <p>See more</p>
-          </button>
+            <p onClick={() => handleSeeMore("gym")} className="bigCardLink">
+              See more
+            </p>
         </div>
       </div>
     </div>

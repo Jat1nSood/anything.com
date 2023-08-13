@@ -1,0 +1,55 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.backToTop{
+    text-align: center;
+    padding: 20px 0;
+    line-height: 19px;
+    font-size: 15px;
+    background-color: #37475a;
+    color: white;
+    font-weight: 700;
+}
+.backToTop:hover {
+    background-color: #485769;
+    cursor: pointer;
+}
+
+.linksContainer{
+    padding: 20px 0 20px 0 ;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    background-color: #232f3e;
+}
+
+.container1{
+    font-size: 14px;
+    
+}
+
+.container1 p{
+color: #d2dad7;    
+}
+
+.container1 p:hover{
+  cursor: pointer;  
+  text-decoration: underline;
+    }
+
+    .footerLine{
+        background-color: white;
+        height: 1px;
+    }
+
+    .footerCopyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }

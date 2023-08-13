@@ -56,8 +56,7 @@ const[userEmail, setUserEmail] = useRecoilState(loggedInEmail);
       setToken(response.token);
       setUser(response.name)
       setUserEmail(response.email)
-      console.log(userEmail)
-      console.log(user)
+     
 
       navigate('/');
 
