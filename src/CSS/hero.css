@@ -114,3 +114,54 @@ border-right: 2px solid;
 }
 
 
+@media (min-width: 320px) and (max-width: 460px) {
+
+    .heroDetails{
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: start;
+    }
+    .hero img{
+        width: 300px;
+        height: 200px;
+    }
+    .heroEmi img{
+        width: 40px;
+        height: 40px;
+    }
+    .heroProductDescription{
+        align-items: center;
+        gap: 0px;
+        text-align: center;
+    }
+    .heroDetails{
+        align-items: center;
+    }
+    .heroArrowLeft img {
+        width: 30px;
+        height: 30px;
+    }
+    .heroArrowRight img {
+        width: 30px;
+        height: 30px;
+    }
+    .heroCarousel{
+        width: auto;
+    }
+    .heroArrowLeft{
+        padding: 0;
+        top: 50%;
+    }
+    .heroArrowRight{
+        padding: 0;
+        top: 50%;
+
+    }
+    .hero{
+        padding: 0;
+    }
+}
+
+

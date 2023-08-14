@@ -1,6 +1,7 @@
 .categoryMain{
     display: flex;
     justify-content: center;
+    
    
 }
 
@@ -50,3 +51,41 @@ width: 93%;
     cursor: pointer;
 
 }
+
+.mobileFilterButton{
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .categoryMain{
+        align-items: center;
+    }
+    .filterMenu {
+      position: fixed;
+      top: 17%;
+      left: -250px; 
+      width: 250px;
+      height: 100vh;
+      background-color: white;
+      transition: left 0.3s ease-in-out;
+      z-index: 10;
+      overflow-y: auto;
+    }
+  
+    .filterMenu.show {
+      left: 0; 
+    }
+  
+    /* Adjust the rest of your styles as needed */
+    .categoryMain {
+      display: flex;
+      flex-direction: column;
+      /* Other styles */
+    }
+    .mobileFilterButton{
+        display: block;
+    }
+  }
+  

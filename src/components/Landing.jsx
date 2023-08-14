@@ -20,19 +20,19 @@ export default function Landing() {
         </div>
 
      
-        <div>
+        <div className="">
         <BigCards/>
       </div>
 
-      <div>
-        <TodayDeal/>
+
+        <div className="">        <TodayDeal/>
       </div>
       <div >
 
        <ShopByCategory/>
       </div>
 
-      <div>
+      <div className="centerContainerDeal">
         <TodayDeal/>
       </div>
 

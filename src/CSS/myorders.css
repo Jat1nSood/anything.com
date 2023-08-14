@@ -18,3 +18,18 @@
     mix-blend-mode: multiply;
 }
 
+@media (min-width: 320px) and (max-width: 460px) {
+
+    .myorderCard{
+        width: 100%;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+    .MyOrders ul{
+        padding: 0;
+    }
+    .myorderCard img{
+        width: 100px;
+        height: 100px;
+    }
+}

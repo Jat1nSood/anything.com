@@ -36,8 +36,33 @@
     height: 300px;
 }
 
+@media (min-width: 320px) and (max-width: 460px) {
+    .bigCardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
+        justify-items: center; 
+        align-items: flex-start; 
+        background-color: white;
+      }
+      .bigCard{
+        justify-content: center;
+        align-items: center;
+        padding: 9px;
+      }
 
-@media (max-width : 768px) {
+      .bigCard h2{
+        font-size: 13px;
+      }
+
+      .bigCard img{
+        object-fit: contain;
+        width: 150px;
+        height: 150px;
+      }
+    
+  }
+/* @media (max-width : 768px) {
 
     .bigCardContainer{
         display: flex;
@@ -47,4 +72,4 @@
     
     }
     
-}
+} */

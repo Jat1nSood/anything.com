@@ -115,12 +115,12 @@ body : JSON.stringify({addedProduct : addedProduct, user : userEmail})
             </div>
             <button onClick={handelBuy}>Proceed to buy</button>
           </div>
-          <div className="alsoBought">
+          {/* <div className="alsoBought">
 
             <AlsoBought/>
 
 
-          </div>
+          </div> */}
         </div>
       )}
     </div>

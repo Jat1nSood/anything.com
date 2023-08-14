@@ -16,6 +16,14 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: start;
 }
+
+.centerContainerlogin{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+
+}
 .centerContainerNav{
 
     display: flex;

@@ -8,6 +8,7 @@ import FilterMenu from "./FilterMenu";
 export default function CategoryPage() {
   //States
   const [selectedGender, setSelectedGender] = useState(null);
+  const [isFilterMenuVisible, setIsFilterMenuVisible] = useState(false);
 
   const { categoryname } = useParams();
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -25,10 +26,9 @@ export default function CategoryPage() {
   //Subcategories
   const items = [
     {
-      fashion: ["shoes",  "shirt", "pants"],
+      fashion: ["shoes", "shirt", "pants"],
       electronics: ["TV", "Refrigerator", "laptop"],
       shoes: ["formal", "sports", "sneaker"],
-
     },
   ];
 
@@ -53,9 +53,8 @@ export default function CategoryPage() {
   };
 
   const handleCategory = (category) => {
-    if(category){
+    if (category) {
       setSelectedCategories(category);
-
     }
   };
 
@@ -76,11 +75,20 @@ export default function CategoryPage() {
       setProducts(filteredProducts);
       console.log(products);
     }
+    setIsFilterMenuVisible(false)
+  };
+
+  const toggleFilterMenu = () => {
+    setIsFilterMenuVisible(!isFilterMenuVisible);
   };
 
   return (
     <div className="categoryMain">
-      <div className="filterMenu">
+      {" "}
+      <button className="mobileFilterButton" onClick={toggleFilterMenu}>
+        Filter
+      </button>
+      <div className={`filterMenu ${isFilterMenuVisible ? "show" : ""}`}>
         <div className="sortBy">
           <h3>Sort by</h3>
           <div className="sortByInput">
@@ -134,27 +142,25 @@ export default function CategoryPage() {
           </div>
         )}
         <div className="sortBy">
-        <h3>Category</h3>
+          <h3>Category</h3>
 
           {items[0][categoryname] &&
             items[0][categoryname].map((subcategory) => (
               <>
-
-              <div className="sortByInput" key={subcategory}>
-                <input
-                  type="checkbox"
-                  value={subcategory}
-                  checked={selectedCategories === subcategory}
-                  onChange={() => handleCategory(subcategory)}
-                />
-                <label>{subcategory}</label>
-              </div>
+                <div className="sortByInput" key={subcategory}>
+                  <input
+                    type="checkbox"
+                    value={subcategory}
+                    checked={selectedCategories === subcategory}
+                    onChange={() => handleCategory(subcategory)}
+                  />
+                  <label>{subcategory}</label>
+                </div>
               </>
             ))}
         </div>
         <button onClick={applyFilter}>Apply</button>
       </div>
-
       <div className="categoryCardContainerOuter">
         <div className="categoryCardContainerHeading">
           <h1>Results</h1>

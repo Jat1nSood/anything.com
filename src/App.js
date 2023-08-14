@@ -32,9 +32,9 @@ function App() {
                   path="/"
                   element={
                     <div className="landingcenterContainer">
-                      <div className="boxWidth">
+                      {/* <div className="boxWidth"> */}
                         <Landing />
-                      </div>
+                      {/* </div> */}
                     </div>
                   }
                 />
@@ -42,9 +42,10 @@ function App() {
                 <Route
                   path="/login"
                   element={
-                    <div className="centerContainer">
+                    <div className="centerContainerlogin">
                       <div className="boxWidth">
                         <Login />
+                        
                       </div>
                     </div>
                   }
@@ -53,7 +54,7 @@ function App() {
                 <Route
                   path="/register"
                   element={
-                    <div className="centerContainer">
+                    <div className="centerContainerlogin">
                       <div className="boxWidth">
                         <Registration />
                       </div>
@@ -107,7 +108,7 @@ function App() {
               </Routes>
 
               <div className="centerContainerfooter">
-              <div className="backToTop">Back To Top</div>
+              {/* <div className="backToTop">Back To Top</div> */}
 
                 {/* <div className="boxWidth"> */}
                   <Footer />

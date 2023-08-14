@@ -160,3 +160,31 @@ background-color: white;
     cursor: pointer;
     font-weight: 900;
 }
+
+    @media (min-width: 320px) and (max-width: 460px) {
+        .myCartMain{
+            flex-direction: column;
+            align-items: center;
+        }
+        .myCartContainer{
+            font-size: 14px;
+            width: 100%;
+            padding: 0px;
+        }
+        .myCartCard{
+            padding: 0;
+        }
+.myCartCard img{
+    width: 100px;
+    height: 100px;
+}
+.subTotalMain{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.subTotalCard{
+    padding: 4px;
+    align-items: center;
+}
+}

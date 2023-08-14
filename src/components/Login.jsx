@@ -70,7 +70,7 @@ const[userEmail, setUserEmail] = useRecoilState(loggedInEmail);
   return (
     <div className='login'>
         <div className='loginCard'>
-            <h1 >Login</h1>
+            <h1 >Welcome Back</h1>
            
 <TextField sx={{ m: 1, width: '25ch' }}
 onChange={(e) => setEmail(e.target.value)}

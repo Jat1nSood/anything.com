@@ -5,6 +5,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 20px 0 15px 0 ;
+    background-color: #131921;
     
 }
 
@@ -36,6 +37,7 @@
     font-size: 16px;
     margin-right: 1rem;
     cursor: pointer;
+    font-weight: 600;
 }
 .navSearch{
     width: 100%;
@@ -60,35 +62,105 @@
 
 .navCart{
     position: relative;
+   
 }
 
 .navCart img{
-    mix-blend-mode: multiply;
+
+    width: 44px;
+    height: 44px;
+
 }
 .navCart span{
     position: absolute;
-    top:  -40%;
-    right: 20%;
+    top:  13%;
+    right: 41%;
+    color : #f7ca00;
+    font-weight: 700;
 }
 
 @media (max-width : 768px) {
+
+    .navMain{
+        position: relative;
+    }
+    .navSidebar{
+        position: absolute;
+    top: 80%;
+    left: -270px;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+
+    z-index: 10;
+    }
+    .navSidebar.show{
+        left: 0;
+    }
     .navItems{
         display: none;
     }
 
     .mobileMenu{
         display: flex;
-        justify-content: end;
+        justify-content: start;
         padding: 4px;
         align-items: center;
+        padding: 10px;
         
     }
     .mobileMenu img{
-        width: 50px;
-        height: 30px;
+        width: 44px;
+        height: 44px;
     }
+.mobileLogo{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    color: white;
+    margin-right: auto;
 
-    .navSearch{
-        display: none;
+}
+    
+
+    .mobileMenuItems {
+        padding: 10px;
+       
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        transition: left 0.3s ease-in-out;
+        overflow-y: auto;
+      }
+
+      .mobileMenuItems li{
+        padding: 10px 0 0 0;
+       
+        list-style: none;
+      }
+
+    
+      .mobileNavLink{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .mobileNavLink span{
+        color : #f7ca00;
+      }
+
+      .mobileCartImage{
+        position: relative;
+      }
+
+      .mobileCarNumber{
+        position: absolute;
+        color: #f7ca00;
+        top: 6px;
+        right: 18px;
+        font-weight: 900;
+      }
+    .mobileSearch{
+        margin-right: 13px;
     }
 }

@@ -84,7 +84,7 @@ export default function HeroCarousel() {
       <div className="heroArrowLeft" onClick={handlePrevSlide}>
         <img src={left} />
       </div>
-      <div className={`carouselComp active`}>
+      {/* <div className={`carouselComp active`}>
         {" "}
         <Carousel
           title={items[0].title}
@@ -92,7 +92,7 @@ export default function HeroCarousel() {
           url={items[0].url}
           categoryname={items.categoryname}
         />
-      </div>
+      </div> */}
 
       <div className="carouselComp">
         <Carousel
@@ -102,7 +102,7 @@ export default function HeroCarousel() {
           categoryname={items.categoryname}
         />
       </div>
-
+{/* 
       <div className="carouselComp active">
         <Carousel
           title={items[2].title}
@@ -110,7 +110,7 @@ export default function HeroCarousel() {
           url={items[2].url}
           categoryname={items.categoryname}
         />
-      </div>
+      </div> */}
 
       <div className="heroArrowRight" onClick={handleNextSlide}>
         <img src={right} />

@@ -36,3 +36,22 @@
     cursor: pointer;
     font-weight: 900;
 }
+
+@media (min-width: 320px) and (max-width: 460px) {
+
+    .soloImage{
+        padding: 0;
+    }
+
+    .soloImage img{
+        width: 150px;
+    }
+
+    .soloTitle h1{
+        font-size: 14px;
+    }
+
+    .soloDescription h2{
+        font-size: 15px;
+    }
+}
