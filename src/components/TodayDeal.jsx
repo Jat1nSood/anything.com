@@ -314,7 +314,7 @@ export default function TodayDeal() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 768); 
     };
 
     handleResize();

@@ -28,7 +28,7 @@
     list-style: none;
 
     margin: 0;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
     
 }
 
@@ -40,20 +40,24 @@
     font-weight: 600;
 }
 .navSearch{
-    width: 100%;
     padding: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.navSearch img{
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+
+}
+
 .navSearch input{
     width: 100%;
     font-size: 20px
 }
-.navSearch img{
-    mix-blend-mode :multiply;
-}
+
 
 .mobileMenu{
     display: none;
