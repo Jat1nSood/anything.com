@@ -29,7 +29,7 @@ export function CartProvider({ children }) {
 
       const updatedSubTotal = updatedAddedProduct.reduce(
         (acc, product) => acc + product.totalProductPrice,
-        subTotal
+        0
       );
   
       setSubTotal(updatedSubTotal);
