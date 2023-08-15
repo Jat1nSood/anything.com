@@ -13,25 +13,32 @@ export function CartProvider({ children }) {
 
     const totalProductPrice = numericPrice * quantity;
 
-    setAddedProduct((prevState) => [
-      ...prevState,
-      {
-        id,
-        title,
-        url,
-        price: numericPrice,
-        quantity,
-        description,
-        totalProductPrice,
-      },
-    ]);
+    setAddedProduct((prevState) => {
+      const updatedAddedProduct = [
+        ...prevState,
+        {
+          id,
+          title,
+          url,
+          price: numericPrice,
+          quantity,
+          description,
+          totalProductPrice,
+        },
+      ]
 
-    const updatedSubTotal = addedProduct.reduce(
-      (acc, product) => acc + product.totalProductPrice,
-      subTotal
-    );
+      const updatedSubTotal = updatedAddedProduct.reduce(
+        (acc, product) => acc + product.totalProductPrice,
+        subTotal
+      );
+  
+      setSubTotal(updatedSubTotal);
 
-    setSubTotal(updatedSubTotal);
+      return updatedAddedProduct
+
+    });
+
+    
   };
 
   const removeProduct = (productId) => {
