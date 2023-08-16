@@ -19,8 +19,7 @@ export default function MyOrders() {
       }
 
       const data = await response.json();
-     
-      setOrders(data.order.addedProduct)
+      setOrders(data.order)
     } catch (error) {
       console.error('Error:', error);
     }

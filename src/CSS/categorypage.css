@@ -64,7 +64,7 @@ width: 93%;
     }
     .filterMenu {
       position: fixed;
-      top: 17%;
+      top: 14%;
       left: -250px; 
       width: 250px;
       height: 100vh;
@@ -75,7 +75,7 @@ width: 93%;
     }
   
     .filterMenu.show {
-      left: 0; 
+      left: 12px; 
     }
   
     /* Adjust the rest of your styles as needed */
@@ -86,6 +86,7 @@ width: 93%;
     }
     .mobileFilterButton{
         display: block;
+        margin-left: auto;
     }
   }
   

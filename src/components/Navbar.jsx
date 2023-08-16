@@ -181,9 +181,9 @@ export default function Navbar() {
                       <Link to={"/mycart"}>
                         <img src={cart} alt="" />
                       </Link>
-                      <span style={{ color: "#f7ca00", fontWeight: "700" }}>
+                      <Link to={'/mycart'}><span style={{ color: "#f7ca000", fontWeight: "700" }}>
                         {addedProduct.length}
-                      </span>
+                      </span></Link>
                     </div>
                   </li>
                  
@@ -213,9 +213,10 @@ export default function Navbar() {
                       <Link to={"/mycart"}>
                         <img src={cart} alt="" />
                       </Link>
-                      <span style={{ color: "#f7ca000", fontWeight: "700" }}>
+                      <Link to={'/mycart'}><span style={{ color: "#f7ca000", fontWeight: "700" }}>
                         {addedProduct.length}
-                      </span>
+                      </span></Link>
+                      
                     </div>
                   </li>
                 </>
